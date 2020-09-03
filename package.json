@@ -30,6 +30,12 @@
 					"type": "number",
 					"default": 10,
 					"description": "the maximum number of cols the generator can handle"
+				},
+				"TeXMatrix.env":
+				{
+					"type": "string",
+					"default": "bmatrix",
+					"description": "the latex environment of the generated matrix"
 				}
 			}
 		}

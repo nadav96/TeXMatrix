@@ -2,8 +2,8 @@
 import json
 
 output = {}
-for rows in range(1, 10):
-    for cols in range(1, 10):
+for rows in range(1, 13):
+    for cols in range(1, 13):
         matrix_output = {
             "prefix": ["{}x{};matrix".format(rows,cols), "row={},col={};matrix".format(rows,cols)],
             "description": "{} by {} matrix".format(rows, cols)
