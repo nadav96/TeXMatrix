@@ -7,19 +7,32 @@
 		"vscode": "^1.48.0"
 	},
 	"categories": [
-		"Other"
+		"Snippets"
 	],
-	"activationEvents": [
-		"onCommand:helloworld.helloWorld"
-	],
-	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
+		"snippets": [
 			{
-				"command": "helloworld.helloWorld",
-				"title": "Hello World"
+			"language": "latex",
+			"path": "./snippets.json"
 			}
-		]
+		],
+		"configuration": {
+			"title": "TeXMatrix",
+			"properties": {
+				"TeXMatrix.max-rows":
+				{
+					"type": "number",
+					"default": 10,
+					"description": "the maximum number of rows the generator can handle"
+				},
+				"TeXMatrix.max-cols":
+				{
+					"type": "number",
+					"default": 10,
+					"description": "the maximum number of cols the generator can handle"
+				}
+			}
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
