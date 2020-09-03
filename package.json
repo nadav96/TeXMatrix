@@ -1,7 +1,15 @@
 {
-	"name": "TeXMatrix",
+	"name": "tex-matrix",
+	"description": "An extension provides user snippets for latex which allows creating matrix up to 12x12",
 	"displayName": "TeXMatrix",
-	"description": "",
+	"icon": "img/icon.png",
+	"publisher": "NadavGold",
+	"license": "MIT",
+	"homepage": "https://github.com/nadav96/TeXMatrix",
+	"repository": {
+	  "type": "git",
+	  "url": "https://github.com/nadav96/TeXMatrix"
+	},
 	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.48.0"
@@ -9,6 +17,15 @@
 	"categories": [
 		"Snippets"
 	],
+	"keywords": [
+		"latex",
+		"tex",
+		"compile",
+		"preview",
+		"hint",
+		"matrix",
+		"generator"
+	  ],
 	"contributes": {
 		"snippets": [
 			{
